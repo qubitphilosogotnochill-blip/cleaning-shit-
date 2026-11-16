@@ -1,0 +1,189 @@
+/* ==========================================================================
+   DESIGN TOKENS & VISUAL THEMES
+   ========================================================================== */
+
+:root {
+  /* Common System Font Stack */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Layout Sizing */
+  --container-max-width: 1200px;
+  --container-padding: 1.5rem;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-theme: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+  /* Accessibility Focus Ring */
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 2px;
+}
+
+/* ==========================================================================
+   THEME 1: Clean & Classic (DEFAULT)
+   Navy blue, crisp white, and light gray.
+   ========================================================================== */
+:root,
+[data-theme="clean-classic"] {
+  --theme-id: "clean-classic";
+  --theme-name: "Clean & Classic";
+
+  /* Primary Brand: Deep Navy */
+  --color-primary: #1e3a8a;
+  --color-primary-hover: #172554;
+  --color-primary-light: #3b82f6;
+  --color-primary-tint: #eff6ff;
+
+  /* Secondary Accent: Crisp Electric Sky */
+  --color-accent: #0284c7;
+  --color-accent-hover: #0369a1;
+  --color-accent-tint: #e0f2fe;
+  --color-accent-text: #0284c7;
+
+  /* Surfaces & Backgrounds */
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-card: #ffffff;
+  --color-surface-card-hover: #f1f5f9;
+  --color-surface-elevated: #ffffff;
+  --color-surface-dark: #0f172a;
+  --color-surface-dark-text: #f8fafc;
+
+  /* High Contrast Typography (WCAG AA Compliant: > 7:1) */
+  --color-text: #0f172a;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #ffffff;
+
+  /* Borders & Dividers */
+  --color-border: #e2e8f0;
+  --color-border-hover: #cbd5e1;
+
+  /* Badges & Indicators */
+  --color-badge-bg: #e0f2fe;
+  --color-badge-text: #075985;
+  --color-badge-border: #bae6fd;
+
+  /* Focus Indicator */
+  --color-focus: #0284c7;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 32px -4px rgba(15, 23, 42, 0.12);
+  --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+}
+
+/* ==========================================================================
+   THEME 2: Fresh & Natural
+   Sage green, warm white, and muted beige.
+   ========================================================================== */
+[data-theme="fresh-natural"] {
+  --theme-id: "fresh-natural";
+  --theme-name: "Fresh & Natural";
+
+  /* Primary Brand: Deep Sage / Forest Green */
+  --color-primary: #2d5a43;
+  --color-primary-hover: #224332;
+  --color-primary-light: #44775c;
+  --color-primary-tint: #edf4ef;
+
+  /* Secondary Accent: Earthy Sage Leaf */
+  --color-accent: #52796f;
+  --color-accent-hover: #354f52;
+  --color-accent-tint: #e8f0ec;
+  --color-accent-text: #2d5a43;
+
+  /* Surfaces & Backgrounds */
+  --color-bg: #faf8f4;
+  --color-surface: #f1ede4;
+  --color-surface-card: #ffffff;
+  --color-surface-card-hover: #f9f7f2;
+  --color-surface-elevated: #ffffff;
+  --color-surface-dark: #1e3327;
+  --color-surface-dark-text: #f4f8f5;
+
+  /* High Contrast Typography */
+  --color-text: #1a2820;
+  --color-text-secondary: #3b4d42;
+  --color-text-muted: #5e7266;
+  --color-text-inverse: #ffffff;
+
+  /* Borders & Dividers */
+  --color-border: #ded7cb;
+  --color-border-hover: #cbc1b1;
+
+  /* Badges & Indicators */
+  --color-badge-bg: #e3ece6;
+  --color-badge-text: #244634;
+  --color-badge-border: #c8dacd;
+
+  /* Focus Indicator */
+  --color-focus: #354f52;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(33, 51, 40, 0.05);
+  --shadow-md: 0 4px 16px -2px rgba(33, 51, 40, 0.07);
+  --shadow-lg: 0 12px 32px -4px rgba(33, 51, 40, 0.11);
+  --shadow-card: 0 4px 20px -2px rgba(33, 51, 40, 0.06);
+}
+
+/* ==========================================================================
+   THEME 3: Warm & Welcoming
+   Teal, cream, and soft coral.
+   ========================================================================== */
+[data-theme="warm-welcoming"] {
+  --theme-id: "warm-welcoming";
+  --theme-name: "Warm & Welcoming";
+
+  /* Primary Brand: Rich Teal */
+  --color-primary: #0f5b66;
+  --color-primary-hover: #0a4048;
+  --color-primary-light: #167a88;
+  --color-primary-tint: #ecf8fa;
+
+  /* Secondary Accent: Soft Coral */
+  --color-accent: #dd5b45;
+  --color-accent-hover: #c3442f;
+  --color-accent-tint: #fef0ec;
+  --color-accent-text: #c3442f;
+
+  /* Surfaces & Backgrounds */
+  --color-bg: #fdfbf7;
+  --color-surface: #f6efe2;
+  --color-surface-card: #ffffff;
+  --color-surface-card-hover: #fcf8f0;
+  --color-surface-elevated: #ffffff;
+  --color-surface-dark: #162c30;
+  --color-surface-dark-text: #f8faf9;
+
+  /* High Contrast Typography */
+  --color-text: #18282c;
+  --color-text-secondary: #3c4f53;
+  --color-text-muted: #5e7377;
+  --color-text-inverse: #ffffff;
+
+  /* Borders & Dividers */
+  --color-border: #e7ddcf;
+  --color-border-hover: #d8c9b4;
+
+  /* Badges & Indicators */
+  --color-badge-bg: #feece8;
+  --color-badge-text: #b63a25;
+  --color-badge-border: #fed3c9;
+
+  /* Focus Indicator */
+  --color-focus: #dd5b45;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(22, 44, 48, 0.05);
+  --shadow-md: 0 4px 16px -2px rgba(22, 44, 48, 0.07);
+  --shadow-lg: 0 12px 32px -4px rgba(22, 44, 48, 0.11);
+  --shadow-card: 0 4px 20px -2px rgba(22, 44, 48, 0.06);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "house-cleaning-service",
+  "version": "1.0.0",
+  "description": "Modern, responsive house-cleaning service website with theme switching, instant quote calculator, and accessible design.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node test-verification.js"
+  },
+  "keywords": [
+    "cleaning-service",
+    "house-cleaning",
+    "responsive-website",
+    "theme-selector",
+    "quote-calculator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

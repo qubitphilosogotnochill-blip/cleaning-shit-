@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--bg-surface, #f8fafc)"/>
+      <stop offset="100%" stop-color="var(--bg-surface-alt, #e2e8f0)"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--brand-primary, #1e3a8a)"/>
+      <stop offset="100%" stop-color="var(--brand-accent, #2563eb)"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--brand-accent, #2563eb)"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="600" rx="24" fill="url(#bgGrad)"/>
+
+  <!-- Interior Floor line -->
+  <path d="M0 450 L800 450 L800 600 L0 600 Z" fill="rgba(0,0,0,0.03)"/>
+
+  <!-- Window Frame -->
+  <rect x="80" y="80" width="220" height="280" rx="12" fill="#ffffff" filter="url(#softShadow)"/>
+  <rect x="92" y="92" width="94" height="124" rx="6" fill="#e0f2fe" opacity="0.6"/>
+  <rect x="194" y="92" width="94" height="124" rx="6" fill="#e0f2fe" opacity="0.6"/>
+  <rect x="92" y="224" width="94" height="124" rx="6" fill="#e0f2fe" opacity="0.6"/>
+  <rect x="194" y="224" width="94" height="124" rx="6" fill="#e0f2fe" opacity="0.6"/>
+  <!-- Sunbeams / brightness -->
+  <path d="M194 92 L360 450 L260 450 Z" fill="#ffffff" opacity="0.15"/>
+
+  <!-- Potted Plant on Stand -->
+  <rect x="110" y="420" width="10" height="60" rx="3" fill="#94a3b8"/>
+  <rect x="150" y="420" width="10" height="60" rx="3" fill="#94a3b8"/>
+  <path d="M100 400 L170 400 L160 440 L110 440 Z" fill="var(--brand-accent, #2563eb)" opacity="0.8"/>
+  <!-- Leaves -->
+  <path d="M135 390 C120 350, 80 340, 95 320 C115 320, 130 350, 135 390 Z" fill="#22c55e"/>
+  <path d="M135 390 C140 330, 180 320, 175 300 C155 310, 140 350, 135 390 Z" fill="#16a34a"/>
+  <path d="M135 390 C130 320, 110 300, 135 270 C145 300, 140 340, 135 390 Z" fill="#4ade80"/>
+
+  <!-- Modern Clean Sofa -->
+  <rect x="360" y="320" width="340" height="140" rx="20" fill="#ffffff" filter="url(#softShadow)"/>
+  <rect x="340" y="350" width="40" height="100" rx="14" fill="#f1f5f9"/>
+  <rect x="680" y="350" width="40" height="100" rx="14" fill="#f1f5f9"/>
+  <!-- Cushions -->
+  <rect x="390" y="340" width="135" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="535" y="340" width="135" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="430" cy="380" r="22" fill="var(--brand-accent, #2563eb)" opacity="0.15"/>
+  <circle cx="630" cy="380" r="22" fill="var(--brand-primary, #1e3a8a)" opacity="0.15"/>
+  <!-- Sofa legs -->
+  <rect x="380" y="460" width="8" height="24" rx="2" fill="#64748b"/>
+  <rect x="672" y="460" width="8" height="24" rx="2" fill="#64748b"/>
+
+  <!-- Cleaning Caddy / Spray Bottle Feature -->
+  <g transform="translate(240, 360)">
+    <!-- Caddy Box -->
+    <rect x="0" y="40" width="110" height="70" rx="10" fill="var(--brand-primary, #1e3a8a)" filter="url(#softShadow)"/>
+    <rect x="5" y="35" width="100" height="12" rx="4" fill="#ffffff" opacity="0.3"/>
+    <!-- Handle -->
+    <path d="M20 40 V15 C20 8, 90 8, 90 15 V40" stroke="var(--brand-primary, #1e3a8a)" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <!-- Spray Bottle Inside -->
+    <rect x="22" y="10" width="22" height="40" rx="4" fill="#38bdf8"/>
+    <path d="M26 10 L26 2 L38 2 L42 7 L34 10 Z" fill="#0284c7"/>
+    <!-- Brush Inside -->
+    <rect x="54" y="5" width="14" height="45" rx="3" fill="#f59e0b" transform="rotate(10 60 25)"/>
+    <!-- Microfiber Cloth Draped -->
+    <path d="M72 38 C75 30, 95 32, 98 42 C102 55, 96 68, 88 70 C80 72, 70 60, 72 38 Z" fill="#f43f5e"/>
+  </g>
+
+  <!-- Large Trust Badge floating card -->
+  <g transform="translate(480, 110)" filter="url(#softShadow)">
+    <rect width="240" height="96" rx="16" fill="#ffffff"/>
+    <circle cx="48" cy="48" r="28" fill="url(#primaryGrad)"/>
+    <!-- Checkmark Icon -->
+    <path d="M40 48 L46 54 L58 42" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="90" y="42" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0f172a">100% Guaranteed</text>
+    <text x="90" y="62" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#64748b">Verified &amp; Insured Cleaners</text>
+    <text x="90" y="78" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--brand-accent, #2563eb)">★ 4.9 Star Rating</text>
+  </g>
+
+  <!-- Sparkling Clean Elements -->
+  <!-- Sparkle 1 -->
+  <path d="M260 200 L266 220 L286 226 L266 232 L260 252 L254 232 L234 226 L254 220 Z" fill="url(#accentGrad)"/>
+  <!-- Sparkle 2 -->
+  <path d="M430 240 L434 252 L446 256 L434 260 L430 272 L426 260 L414 256 L426 252 Z" fill="#fbbf24"/>
+  <!-- Sparkle 3 -->
+  <path d="M710 270 L713 280 L723 283 L713 286 L710 296 L707 286 L697 283 L707 280 Z" fill="url(#accentGrad)"/>
+  <!-- Sparkle 4 -->
+  <circle cx="340" cy="180" r="4" fill="#38bdf8"/>
+  <circle cx="470" cy="290" r="5" fill="#f43f5e" opacity="0.6"/>
+  <circle cx="210" cy="270" r="3" fill="#fbbf24"/>
+</svg>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="clean-classic">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional, trustworthy house cleaning services. Standard, deep, and move-in/move-out cleans with transparent pricing and a 100% satisfaction guarantee." />
+  <meta name="theme-color" content="#1e3a8a" id="meta-theme-color" />
+  <title>[Business Name] | Professional House Cleaning Services</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Critical Theme Initialization Script (Prevents FOUC) -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem("house_cleaning_theme");
+        const validThemes = ["clean-classic", "fresh-natural", "warm-welcoming"];
+        if (savedTheme && validThemes.includes(savedTheme)) {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        } else {
+          document.documentElement.setAttribute("data-theme", "clean-classic");
+        }
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "clean-classic");
+      }
+    })();
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <!-- Brand Identity -->
+      <a href="#hero" class="brand-logo" aria-label="[Business Name] Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor" fill-opacity="0.12"/>
+          <path d="M8 15L16 8L24 15V24C24 24.5523 23.5523 25 23 25H9C8.44772 25 8 24.5523 8 24V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 25V17H19V25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 6L23 9L26 10L23 11L22 14L21 11L18 10L21 9L22 6Z" fill="var(--color-accent)"/>
+        </svg>
+        <span class="brand-name">[Business Name]</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#trust" class="nav-link">Why Us</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <!-- Visual Theme Selector -->
+        <div class="theme-selector-container">
+          <button 
+            type="button" 
+            class="theme-toggle-btn" 
+            aria-label="Select website visual theme" 
+            aria-haspopup="listbox" 
+            aria-expanded="false" 
+            id="theme-menu-btn"
+          >
+            <span class="theme-swatch-preview" data-theme-active-swatch aria-hidden="true">
+              <span class="theme-dot" style="background-color: #1e3a8a;"></span>
+              <span class="theme-dot" style="background-color: #ffffff;"></span>
+              <span class="theme-dot" style="background-color: #0284c7;"></span>
+            </span>
+            <span data-theme-active-label>Clean &amp; Classic</span>
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+
+          <!-- Accessible Theme Dropdown Options -->
+          <div class="theme-dropdown" role="listbox" aria-labelledby="theme-menu-btn">
+            <button 
+              type="button" 
+              class="theme-option active" 
+              role="option" 
+              aria-selected="true" 
+              data-theme-value="clean-classic"
+            >
+              <div class="theme-option-left">
+                <span class="theme-swatches" aria-hidden="true">
+                  <span style="background-color: #1e3a8a;"></span>
+                  <span style="background-color: #ffffff;"></span>
+                  <span style="background-color: #0284c7;"></span>
+                </span>
+                <span>Clean &amp; Classic</span>
+              </div>
+              <svg class="theme-check" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+
+            <button 
+              type="button" 
+              class="theme-option" 
+              role="option" 
+              aria-selected="false" 
+              data-theme-value="fresh-natural"
+            >
+              <div class="theme-option-left">
+                <span class="theme-swatches" aria-hidden="true">
+                  <span style="background-color: #2d5a43;"></span>
+                  <span style="background-color: #faf8f4;"></span>
+                  <span style="background-color: #52796f;"></span>
+                </span>
+                <span>Fresh &amp; Natural</span>
+              </div>
+              <svg class="theme-check" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" style="opacity: 0;">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+
+            <button 
+              type="button" 
+              class="theme-option" 
+              role="option" 
+              aria-selected="false" 
+              data-theme-value="warm-welcoming"
+            >
+              <div class="theme-option-left">
+                <span class="theme-swatches" aria-hidden="true">
+                  <span style="background-color: #0f5b66;"></span>
+                  <span style="background-color: #fdfbf7;"></span>
+                  <span style="background-color: #dd5b45;"></span>
+                </span>
+                <span>Warm &amp; Welcoming</span>
+              </div>
+              <svg class="theme-check" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" style="opacity: 0;">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Prominent Quote CTA Button -->
+        <a href="#quote" class="btn btn-primary btn-sm">Get a Free Quote</a>
+
+        <!-- Mobile Nav Hamburger Toggle -->
+        <button 
+          type="button" 
+          class="mobile-nav-toggle" 
+          aria-label="Toggle navigation menu" 
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+      <ul class="mobile-nav-menu">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#trust" class="nav-link">Why Us &amp; Guarantees</a></li>
+        <li><a href="#reviews" class="nav-link">Customer Reviews</a></li>
+        <li><a href="#faq" class="nav-link">Frequently Asked Questions</a></li>
+      </ul>
+      <div style="margin-top: 1.5rem;">
+        <a href="#quote" class="btn btn-primary" style="width: 100%;">Get a Free Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN PAGE CONTENT
+       ========================================================================== -->
+  <main id="main-content">
+    
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            Professional House Cleaning
+          </div>
+          
+          <h1 id="hero-title" class="hero-title">
+            Spotless homes. <br />
+            <span class="highlight">Effortless booking.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Experience the calm of a sparkling clean home without the stress. Background-checked professionals, eco-friendly supplies, and our 100% satisfaction guarantee.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#quote" class="btn btn-primary btn-lg">Get Your Instant Quote</a>
+            <a href="#services" class="btn btn-secondary btn-lg">Explore Services</a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="hero-trust-item">
+              <svg class="hero-trust-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <span>4.9 / 5 Rating (500+ Cleans)</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg class="hero-trust-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"/>
+              </svg>
+              <span>Licensed, Bonded &amp; Insured</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg class="hero-trust-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>100% Happiness Guarantee</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Media with Resilient Fallback -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-image-card">
+            <img 
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80" 
+              alt="Bright, spotless modern living room cleaned to perfection" 
+              class="hero-image"
+              fetchpriority="high"
+              data-fallback="/cleaner-hero.svg"
+            />
+          </div>
+
+          <!-- Floating Guarantee Badge -->
+          <div class="hero-floating-card">
+            <div class="floating-icon-box">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div>
+              <div class="floating-title">100% Satisfaction</div>
+              <div class="floating-desc">Free re-clean within 24 hours if anything is missed.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVICES SECTION -->
+    <section class="section section-surface" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Cleaning Solutions</div>
+          <h2 id="services-heading">Expert Cleaning for Every Need</h2>
+          <p>
+            Whether you need recurring maintenance, an intensive seasonal deep clean, or a moving turnover scrub, we deliver meticulous care for every room.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Standard Cleaning -->
+          <article class="service-card featured">
+            <span class="badge service-badge">Most Popular</span>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Standard Cleaning</h3>
+            <p class="service-desc">
+              Routine maintenance for busy homes. Keeps your kitchen, bathrooms, bedrooms, and common areas effortlessly fresh and tidy.
+            </p>
+            
+            <div class="service-meta">
+              <span class="service-price-label">Starting at</span>
+              <span class="service-price-val">$129</span>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">/ clean</span>
+            </div>
+
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Dusting all reachable surfaces, fans, &amp; frames</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Vacuuming rugs/carpets &amp; mopping hard floors</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Sanitizing kitchen counters, sinks, &amp; stovetop</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Scrubbing and disinfecting toilets, showers, &amp; tubs</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Emptying all waste bins &amp; replacing liners</span>
+              </li>
+            </ul>
+
+            <div class="service-card-action">
+              <button type="button" class="btn btn-primary" style="width: 100%;" data-book-service="standard">
+                Book Standard Clean
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 2: Deep Cleaning -->
+          <article class="service-card">
+            <span class="badge service-badge">Intensive Reset</span>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="m4.93 4.93 4.24 4.24"/>
+                <path d="m14.83 9.17 4.24-4.24"/>
+                <path d="m14.83 14.83 4.24 4.24"/>
+                <path d="m9.17 14.83-4.24 4.24"/>
+                <circle cx="12" cy="12" r="4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Deep Cleaning</h3>
+            <p class="service-desc">
+              A comprehensive top-to-bottom reset for homes needing extra attention, detailed grime removal, and high-touch scrub.
+            </p>
+            
+            <div class="service-meta">
+              <span class="service-price-label">Starting at</span>
+              <span class="service-price-val">$219</span>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">/ clean</span>
+            </div>
+
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Everything in the Standard Cleaning package</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Detailed hand-scrubbing of baseboards &amp; doors</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Tile grout scrub and soap scum buildup elimination</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Deep dusting of blinds, window sills, &amp; vents</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Microwave interior scrub &amp; range hood degreasing</span>
+              </li>
+            </ul>
+
+            <div class="service-card-action">
+              <button type="button" class="btn btn-secondary" style="width: 100%;" data-book-service="deep">
+                Book Deep Clean
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 3: Move-In / Move-Out -->
+          <article class="service-card">
+            <span class="badge service-badge">Turnover Ready</span>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Move-In / Move-Out</h3>
+            <p class="service-desc">
+              Designed for buyers, renters, and landlords. Complete turnover deep clean to get your full deposit back or start fresh.
+            </p>
+            
+            <div class="service-meta">
+              <span class="service-price-label">Starting at</span>
+              <span class="service-price-val">$289</span>
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">/ clean</span>
+            </div>
+
+            <ul class="service-features-list">
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Everything included in Deep Cleaning</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Wiping inside &amp; outside of empty cabinets &amp; drawers</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Closet shelves, baseboard edges, &amp; door jambs</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Spot-wiping scuffs on doors, trim, &amp; light switches</span>
+              </li>
+              <li class="service-feature-item">
+                <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Move-out inspection guarantee checklist</span>
+              </li>
+            </ul>
+
+            <div class="service-card-action">
+              <button type="button" class="btn btn-secondary" style="width: 100%;" data-book-service="move">
+                Book Move-In/Out Clean
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Add-ons Strip -->
+        <div class="addons-banner">
+          <div class="addons-header">
+            <h3>Optional Add-On Services</h3>
+            <p style="font-size: 0.875rem;">Customize your service package with targeted extras at checkout</p>
+          </div>
+          <div class="addons-grid">
+            <div class="addon-pill">
+              <span>Interior Oven Scrub</span>
+              <span class="addon-price">+$35</span>
+            </div>
+            <div class="addon-pill">
+              <span>Interior Refrigerator</span>
+              <span class="addon-price">+$35</span>
+            </div>
+            <div class="addon-pill">
+              <span>Interior Windows</span>
+              <span class="addon-price">+$40</span>
+            </div>
+            <div class="addon-pill">
+              <span>Laundry Wash &amp; Fold</span>
+              <span class="addon-price">+$25</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HOW IT WORKS SECTION -->
+    <section class="section" id="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Seamless Experience</div>
+          <h2 id="how-heading">How It Works: 3 Simple Steps</h2>
+          <p>
+            Booking trusted house cleaning should be as effortless as the feeling of walking into a clean home.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number-badge">1</div>
+            <h3>Request Your Instant Quote</h3>
+            <p>
+              Tell us your home size, select your cleaning service level, and choose a preferred schedule using our quick online quote form.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number-badge">2</div>
+            <h3>We Match &amp; Prepare</h3>
+            <p>
+              We assign a background-checked, insured cleaner who arrives promptly with all professional, eco-friendly supplies and equipment.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number-badge">3</div>
+            <h3>Enjoy Your Sparkling Home</h3>
+            <p>
+              Return to an immaculate, peaceful living space. If anything isn't 100% satisfactory, our 24-hour re-clean guarantee has you covered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TRUST & GUARANTEES SECTION -->
+    <section class="section section-surface" id="trust" aria-labelledby="trust-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Why Choose Us</div>
+          <h2 id="trust-heading">Built on Reliability, Safety &amp; Trust</h2>
+          <p>
+            We take pride in delivering dependable, high-caliber house cleaning backed by clear policies and dedicated professionals.
+          </p>
+        </div>
+
+        <!-- Trust Pillars Grid -->
+        <div class="trust-pillars-grid">
+          <div class="trust-pillar-card">
+            <svg class="trust-pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <h3>100% Satisfaction Guarantee</h3>
+            <p>If you're not completely happy with any area cleaned, let us know within 24 hours and we'll re-clean it at no charge.</p>
+          </div>
+
+          <div class="trust-pillar-card">
+            <svg class="trust-pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="8.5" cy="7" r="4"/>
+              <polyline points="17 11 19 13 23 9"/>
+            </svg>
+            <h3>Licensed, Bonded &amp; Insured</h3>
+            <p>Every team member passes thorough identity verification and comprehensive background screenings.</p>
+          </div>
+
+          <div class="trust-pillar-card">
+            <svg class="trust-pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+            </svg>
+            <h3>Pet &amp; Eco-Friendly</h3>
+            <p>We prioritize safe, biodegradable, non-toxic products that safeguard your children, pets, and indoor air.</p>
+          </div>
+
+          <div class="trust-pillar-card">
+            <svg class="trust-pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <line x1="12" y1="8" x2="12" y2="16"/>
+              <line x1="8" y1="12" x2="16" y2="12"/>
+            </svg>
+            <h3>Transparent Flat Rates</h3>
+            <p>Clear, honest pricing with zero surprise charges, fuel fees, or restrictive long-term contracts.</p>
+          </div>
+        </div>
+
+        <!-- Editable Reviews / Testimonials Section (Strictly Placeholders) -->
+        <div id="reviews" style="padding-top: 1rem;">
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div class="placeholder-notice-bar">
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+              </svg>
+              <span>Editable Placeholder Reviews — Customize with your real verified testimonials</span>
+            </div>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Review Placeholder 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                “Outstanding attention to detail. Coming home after a long workday to a spotless kitchen and immaculate floors has genuinely reduced my weekly stress.”
+              </p>
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author">[Client Name Placeholder]</span>
+                <span class="testimonial-location">[Downtown Neighborhood Placeholder]</span>
+                <span class="testimonial-service-tag">Bi-Weekly Standard Cleaning</span>
+              </div>
+            </div>
+
+            <!-- Review Placeholder 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                “We booked a deep clean before hosting an annual family gathering. The team went above and beyond on our baseboards and tile grout. Truly exceptional!”
+              </p>
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author">[Client Name Placeholder]</span>
+                <span class="testimonial-location">[Westside Community Placeholder]</span>
+                <span class="testimonial-service-tag">Deep Spring Cleaning</span>
+              </div>
+            </div>
+
+            <!-- Review Placeholder 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                “The move-out cleaning team ensured our property manager refunded 100% of our security deposit. Prompt, polite, and completely thorough.”
+              </p>
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author">[Client Name Placeholder]</span>
+                <span class="testimonial-location">[Suburbs Area Placeholder]</span>
+                <span class="testimonial-service-tag">Move-Out Turnover Cleaning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. QUOTE & BOOKING FORM SECTION -->
+    <section class="section" id="quote" aria-labelledby="quote-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">No Obligation</div>
+          <h2 id="quote-heading">Request a Free Cleaning Quote</h2>
+          <p>
+            Receive an instant estimate in seconds. Customize your home parameters below and our team will get in touch to confirm your booking.
+          </p>
+        </div>
+
+        <div class="quote-layout">
+          <!-- Form Left Column -->
+          <div>
+            <div class="quote-form-card" id="quote-form-card">
+              <form id="quote-form" novalidate aria-label="Cleaning Quote Request Form">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="quote-name" class="form-label">
+                    Full Name <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="quote-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="e.g. Jane Doe" 
+                    required 
+                    aria-required="true"
+                    aria-describedby="quote-name-error"
+                  />
+                  <div id="quote-name-error" class="form-error-msg" role="alert"></div>
+                </div>
+
+                <!-- Email & Phone Fields -->
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="quote-email" class="form-label">
+                      Email Address <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="quote-email" 
+                      name="email" 
+                      class="form-input" 
+                      placeholder="jane@example.com" 
+                      required 
+                      aria-required="true"
+                      aria-describedby="quote-email-error"
+                    />
+                    <div id="quote-email-error" class="form-error-msg" role="alert"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="quote-phone" class="form-label">
+                      Phone Number <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="tel" 
+                      id="quote-phone" 
+                      name="phone" 
+                      class="form-input" 
+                      placeholder="(555) 000-0000" 
+                      required 
+                      aria-required="true"
+                      aria-describedby="quote-phone-error"
+                    />
+                    <div id="quote-phone-error" class="form-error-msg" role="alert"></div>
+                  </div>
+                </div>
+
+                <!-- Service Type Selection -->
+                <div class="form-group">
+                  <label for="quote-service" class="form-label">
+                    Service Type <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <select id="quote-service" name="service" class="form-select" required aria-required="true">
+                    <option value="standard" selected>Standard Cleaning (Routine Maintenance)</option>
+                    <option value="deep">Deep Cleaning (Intensive Seasonal Reset)</option>
+                    <option value="move">Move-In / Move-Out (Turnover Cleaning)</option>
+                  </select>
+                </div>
+
+                <!-- Home Size (Bedrooms & Bathrooms) -->
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="quote-bedrooms" class="form-label">Bedrooms</label>
+                    <select id="quote-bedrooms" name="bedrooms" class="form-select">
+                      <option value="1">1 Bedroom / Studio</option>
+                      <option value="2" selected>2 Bedrooms</option>
+                      <option value="3">3 Bedrooms</option>
+                      <option value="4">4 Bedrooms</option>
+                      <option value="5">5+ Bedrooms</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="quote-bathrooms" class="form-label">Bathrooms</label>
+                    <select id="quote-bathrooms" name="bathrooms" class="form-select">
+                      <option value="1" selected>1 Bathroom</option>
+                      <option value="2">2 Bathrooms</option>
+                      <option value="3">3 Bathrooms</option>
+                      <option value="4">4+ Bathrooms</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Cleaning Frequency -->
+                <div class="form-group">
+                  <label for="quote-frequency" class="form-label">Preferred Cleaning Cadence</label>
+                  <select id="quote-frequency" name="frequency" class="form-select">
+                    <option value="biweekly" selected>Bi-Weekly (Save 10% - Most Popular)</option>
+                    <option value="weekly">Weekly (Save 15% - Maximum Freshness)</option>
+                    <option value="monthly">Monthly (Save 5%)</option>
+                    <option value="one-time">One-Time Clean (Standard Rate)</option>
+                  </select>
+                </div>
+
+                <!-- Message / Special Instructions -->
+                <div class="form-group">
+                  <label for="quote-message" class="form-label">Message or Special Requests (Optional)</label>
+                  <textarea 
+                    id="quote-message" 
+                    name="message" 
+                    class="form-textarea" 
+                    placeholder="Tell us about pets, focus areas, lockbox instructions, or preferred arrival days..."
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                  Request Your Free Quote
+                </button>
+                
+                <p style="font-size: 0.8125rem; color: var(--color-text-muted); text-align: center; margin-top: 1rem;">
+                  🔒 We respect your privacy. No spam, credit card, or aggressive follow-ups.
+                </p>
+              </form>
+
+              <!-- Success State Card (Revealed on Valid Submission) -->
+              <div 
+                id="quote-success-state" 
+                class="quote-success-state" 
+                tabindex="-1" 
+                role="status" 
+                aria-live="polite"
+              >
+                <div class="success-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <h3>Quote Request Received!</h3>
+                <p>
+                  Thank you! Your request details have been recorded for demonstration. In a production environment, our dispatcher will contact you within 2 hours.
+                </p>
+
+                <div class="success-notice-box">
+                  <strong>Demo Mode Note:</strong> This form processes client-side validation and computes your estimate locally. No live server or database backend is currently connected.
+                  <ul class="success-summary-list" id="success-summary-details">
+                    <!-- Populated dynamically by quote-calculator.js -->
+                  </ul>
+                </div>
+
+                <button type="button" id="quote-reset-btn" class="btn btn-secondary">
+                  Submit Another Quote Request
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Estimate Preview Sticky Card -->
+          <aside class="estimate-preview-card" aria-label="Live Quote Estimate Preview">
+            <div class="estimate-header">
+              <h3>Live Quote Estimate</h3>
+              <span class="estimate-badge">Instant Preview</span>
+            </div>
+
+            <div class="estimate-line-item">
+              <span>Service Level:</span>
+              <strong id="preview-service-name">Standard Cleaning</strong>
+            </div>
+
+            <div class="estimate-line-item">
+              <span>Home Layout:</span>
+              <strong id="preview-rooms">2 Bed, 1 Bath</strong>
+            </div>
+
+            <div class="estimate-line-item" id="preview-discount-row">
+              <span>Cadence Discount:</span>
+              <strong id="preview-discount-amount" style="color: var(--color-primary);">-$15 (10%)</strong>
+            </div>
+
+            <div class="estimate-total-box">
+              <div class="estimate-total-label">Estimated Price</div>
+              <div class="estimate-total-price" id="preview-total-price">$134</div>
+              <div class="estimate-duration" id="preview-hours">Approx. 2.5 – 3.5 hours</div>
+            </div>
+
+            <div class="estimate-disclaimer">
+              <strong>Transparent Estimate:</strong> Rates reflect standard residential square footage and condition. Exact final price is confirmed prior to dispatch.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ ACCORDION SECTION -->
+    <section class="section section-surface" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Clear Answers</div>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <p>
+            Have questions before booking? Here is everything you need to know about our service and policies.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-summary">
+              <span>Do you provide your own cleaning supplies and equipment?</span>
+              <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              Yes, entirely! Our cleaning professionals bring HEPA-filtered vacuums, clean microfiber mop systems, and eco-friendly, pet-safe disinfectants. If you have specialty surfaces requiring dedicated products (such as unsealed natural stone), simply leave them on the counter with instructions.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>Do I need to be at home while the cleaners work?</span>
+              <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              It is completely up to your preference. Many clients provide digital door codes, key lockbox combinations, or buzz us in through front desk concierge. All cleaners are background-checked, insured, and bonded so you can go about your day with total peace of mind.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>What is your 24-hour satisfaction guarantee?</span>
+              <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              Your happiness is our priority. If any corner, fixture, or room doesn't meet your expectations, let us know within 24 hours of completion and we will dispatch a team member to re-clean the area free of charge.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>What is your cancellation and rescheduling policy?</span>
+              <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              You can reschedule or cancel any appointment free of charge up to 24 hours prior to the arrival window. Late cancellations within 24 hours may incur a modest fee to compensate our cleaners for their reserved schedule.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>Are your cleaning detergents pet safe?</span>
+              <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <div class="faq-content">
+              Yes, our standard cleaning formulas are non-toxic, cruelty-free, and plant-derived. We simply request that active pets are placed in a secure room while vacuuming for their comfort and safety.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <!-- Brand & Bio Column -->
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo" aria-label="[Business Name] Home">
+          <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor" fill-opacity="0.12"/>
+            <path d="M8 15L16 8L24 15V24C24 24.5523 23.5523 25 23 25H9C8.44772 25 8 24.5523 8 24V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 25V17H19V25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 6L23 9L26 10L23 11L22 14L21 11L18 10L21 9L22 6Z" fill="var(--color-accent)"/>
+          </svg>
+          <span class="brand-name">[Business Name]</span>
+        </a>
+        <p>
+          Premium residential and turnover cleaning. Committed to sparkling clean spaces, reliable professionals, and honest upfront rates.
+        </p>
+      </div>
+
+      <!-- Navigation Links Column -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero" class="footer-link">Home</a></li>
+          <li><a href="#services" class="footer-link">Our Services</a></li>
+          <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+          <li><a href="#trust" class="footer-link">Guarantees &amp; Safety</a></li>
+          <li><a href="#reviews" class="footer-link">Client Reviews</a></li>
+          <li><a href="#quote" class="footer-link">Instant Quote</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Placeholders Column -->
+      <div class="footer-col">
+        <h4>Contact &amp; Hours</h4>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/>
+          </svg>
+          <span>(555) 382-7900 [Placeholder]</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+          </svg>
+          <span>quotes@yourcleaningservice.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+          </svg>
+          <span>Mon – Sat: 8:00 AM – 6:30 PM</span>
+        </div>
+      </div>
+
+      <!-- Service Areas Column -->
+      <div class="footer-col">
+        <h4>Service Area [Placeholder]</h4>
+        <p style="font-size: 0.875rem; margin-bottom: 0.75rem; color: var(--color-text-secondary);">
+          Serving the Greater Metro Region and nearby communities:
+        </p>
+        <ul class="footer-links" style="font-size: 0.85rem;">
+          <li>• Downtown &amp; Central District</li>
+          <li>• Northside &amp; Highland Park</li>
+          <li>• West End &amp; Meadowbrook</li>
+          <li>• South Valley &amp; Oakridge</li>
+          <li>• East River &amp; Sunnydale</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Meta Bar -->
+    <div class="container footer-bottom">
+      <div>
+        &copy; <span id="current-year">2026</span> <strong>[Business Name]</strong>. All rights reserved.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#trust" class="footer-link">Satisfaction Policy</a>
+        <a href="#faq" class="footer-link">FAQ</a>
+        <a href="#quote" class="footer-link">Get a Quote</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Entry Script -->
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
