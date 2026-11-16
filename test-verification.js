@@ -33,6 +33,7 @@ requiredSections.forEach(sec => {
 
 // 2. Check 3 Themes in CSS
 const requiredThemes = [
+  'cyber-dark',
   'clean-classic',
   'fresh-natural',
   'warm-welcoming'

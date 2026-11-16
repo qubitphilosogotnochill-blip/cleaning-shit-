@@ -8,9 +8,15 @@
  */
 
 const STORAGE_KEY = "house_cleaning_theme";
-const DEFAULT_THEME = "clean-classic";
+const DEFAULT_THEME = "cyber-dark";
 
 export const THEMES = [
+  {
+    id: "cyber-dark",
+    name: "Cyber Futuristic",
+    description: "Deep obsidian, neon cyan, and electric violet",
+    swatches: ["#06b6d4", "#090d16", "#a855f7"]
+  },
   {
     id: "clean-classic",
     name: "Clean & Classic",

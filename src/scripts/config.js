@@ -6,11 +6,11 @@
  */
 
 export const SITE_CONFIG = {
-  // Business Identity (replace "[Business Name]" with your registered trade name)
-  businessName: "[Business Name]",
-  brandBadge: "Professional Residential & Commercial Cleaning",
-  tagline: "Spotless Homes. Honest Pricing. Guaranteed Peace of Mind.",
-  heroSubtitle: "Experience a meticulously clean home without lifting a finger. Vetted cleaners, eco-friendly supplies, and a 100% satisfaction guarantee on every visit.",
+  // Business Identity
+  businessName: "Let Me Clean Daddy",
+  brandBadge: "Next-Gen Autonomous & Precision Cleaning",
+  tagline: "Ultra-Clean Spaces. Cyber-Precision. Zero Stress.",
+  heroSubtitle: "High-performance residential & turnover cleaning engineered for pristine living. Vetted specialists, eco-advanced formulas, and 100% satisfaction guaranteed.",
   
   // Contact & Location Details (Placeholders)
   contact: {

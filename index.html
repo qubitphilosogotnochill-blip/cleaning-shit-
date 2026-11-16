@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="clean-classic">
+<html lang="en" data-theme="cyber-dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional, trustworthy house cleaning services. Standard, deep, and move-in/move-out cleans with transparent pricing and a 100% satisfaction guarantee." />
-  <meta name="theme-color" content="#1e3a8a" id="meta-theme-color" />
-  <title>[Business Name] | Professional House Cleaning Services</title>
+  <meta name="description" content="Next-Gen autonomous and precision residential cleaning. Let Me Clean Daddy delivers spotless, high-performance cleanings with a 100% guarantee." />
+  <meta name="theme-color" content="#090d16" id="meta-theme-color" />
+  <title>Let Me Clean Daddy | Next-Gen Futuristic House Cleaning</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,14 +15,14 @@
     (function () {
       try {
         const savedTheme = localStorage.getItem("house_cleaning_theme");
-        const validThemes = ["clean-classic", "fresh-natural", "warm-welcoming"];
+        const validThemes = ["cyber-dark", "clean-classic", "fresh-natural", "warm-welcoming"];
         if (savedTheme && validThemes.includes(savedTheme)) {
           document.documentElement.setAttribute("data-theme", savedTheme);
         } else {
-          document.documentElement.setAttribute("data-theme", "clean-classic");
+          document.documentElement.setAttribute("data-theme", "cyber-dark");
         }
       } catch (e) {
-        document.documentElement.setAttribute("data-theme", "clean-classic");
+        document.documentElement.setAttribute("data-theme", "cyber-dark");
       }
     })();
   </script>
@@ -42,14 +42,14 @@
   <header class="site-header" role="banner">
     <div class="container navbar">
       <!-- Brand Identity -->
-      <a href="#hero" class="brand-logo" aria-label="[Business Name] Home">
+      <a href="#hero" class="brand-logo" aria-label="Let Me Clean Daddy Home">
         <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect width="32" height="32" rx="8" fill="currentColor" fill-opacity="0.12"/>
           <path d="M8 15L16 8L24 15V24C24 24.5523 23.5523 25 23 25H9C8.44772 25 8 24.5523 8 24V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M13 25V17H19V25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M22 6L23 9L26 10L23 11L22 14L21 11L18 10L21 9L22 6Z" fill="var(--color-accent)"/>
         </svg>
-        <span class="brand-name">[Business Name]</span>
+        <span class="brand-name">Let Me Clean Daddy</span>
       </a>
 
       <!-- Desktop Navigation Links -->
@@ -76,11 +76,11 @@
             id="theme-menu-btn"
           >
             <span class="theme-swatch-preview" data-theme-active-swatch aria-hidden="true">
-              <span class="theme-dot" style="background-color: #1e3a8a;"></span>
-              <span class="theme-dot" style="background-color: #ffffff;"></span>
-              <span class="theme-dot" style="background-color: #0284c7;"></span>
+              <span class="theme-dot" style="background-color: #06b6d4;"></span>
+              <span class="theme-dot" style="background-color: #090d16;"></span>
+              <span class="theme-dot" style="background-color: #a855f7;"></span>
             </span>
-            <span data-theme-active-label>Clean &amp; Classic</span>
+            <span data-theme-active-label>Cyber Futuristic</span>
             <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
             </svg>
@@ -93,6 +93,26 @@
               class="theme-option active" 
               role="option" 
               aria-selected="true" 
+              data-theme-value="cyber-dark"
+            >
+              <div class="theme-option-left">
+                <span class="theme-swatches" aria-hidden="true">
+                  <span style="background-color: #06b6d4;"></span>
+                  <span style="background-color: #090d16;"></span>
+                  <span style="background-color: #a855f7;"></span>
+                </span>
+                <span>Cyber Futuristic</span>
+              </div>
+              <svg class="theme-check" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+
+            <button 
+              type="button" 
+              class="theme-option" 
+              role="option" 
+              aria-selected="false" 
               data-theme-value="clean-classic"
             >
               <div class="theme-option-left">
@@ -103,7 +123,7 @@
                 </span>
                 <span>Clean &amp; Classic</span>
               </div>
-              <svg class="theme-check" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg class="theme-check" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" style="opacity: 0;">
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
               </svg>
             </button>
@@ -944,14 +964,14 @@
     <div class="container footer-grid">
       <!-- Brand & Bio Column -->
       <div class="footer-brand">
-        <a href="#hero" class="brand-logo" aria-label="[Business Name] Home">
+        <a href="#hero" class="brand-logo" aria-label="Let Me Clean Daddy Home">
           <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect width="32" height="32" rx="8" fill="currentColor" fill-opacity="0.12"/>
             <path d="M8 15L16 8L24 15V24C24 24.5523 23.5523 25 23 25H9C8.44772 25 8 24.5523 8 24V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M13 25V17H19V25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M22 6L23 9L26 10L23 11L22 14L21 11L18 10L21 9L22 6Z" fill="var(--color-accent)"/>
           </svg>
-          <span class="brand-name">[Business Name]</span>
+          <span class="brand-name">Let Me Clean Daddy</span>
         </a>
         <p>
           Premium residential and turnover cleaning. Committed to sparkling clean spaces, reliable professionals, and honest upfront rates.
@@ -1014,7 +1034,7 @@
     <!-- Bottom Copyright & Meta Bar -->
     <div class="container footer-bottom">
       <div>
-        &copy; <span id="current-year">2026</span> <strong>[Business Name]</strong>. All rights reserved.
+        &copy; <span id="current-year">2026</span> <strong>Let Me Clean Daddy</strong>. All rights reserved.
       </div>
       <div class="footer-bottom-links">
         <a href="#trust" class="footer-link">Satisfaction Policy</a>
