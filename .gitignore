@@ -25,6 +25,9 @@ Thumbs.db
 *.sln
 *.sw?
 
+# Local agent & secrets
+.agents/
+.env*
+
 # Vercel
 .vercel
-
