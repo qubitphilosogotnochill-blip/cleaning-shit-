@@ -95,3 +95,4 @@ export function initNavigation() {
     yearEl.textContent = new Date().getFullYear();
   }
 }
+
